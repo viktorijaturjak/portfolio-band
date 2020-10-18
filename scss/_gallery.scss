@@ -1,0 +1,81 @@
+.desktop-gallery {
+    width: 100%;
+}
+
+div#carousel {
+	perspective: 1200px;
+	background: $background-color-black;
+    font-size: 0;
+    padding-top: 1rem;
+    overflow: hidden;
+    height: 60vh;
+
+	~ {
+		
+		span {
+			color: #fff;
+			margin: 2rem;
+			display: inline-block;
+			text-decoration: none;
+			font-size: 2rem;
+			transition: 0.6s color;
+			position: relative;
+			margin-top: -10rem;
+			border-bottom: none;
+			line-height: 0;
+			&:hover {
+				color: #888;
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+figure#spinner {
+	transform-style: preserve-3d;
+	height: 500px;
+	transform-origin: 50% 50% -500px;
+    transition: 1s;
+    
+	img {
+		width: 40%;
+		max-width: 425px;
+        position: absolute;
+        top: 10%;
+		left: 30%;
+		transform-origin: 50% 50% -500px;
+        outline: 1px solid transparent;
+        
+		&:nth-child(1) {
+			transform: rotateY(0deg);
+        }
+        
+		&:nth-child(2) {
+			transform: rotateY(-45deg);
+        }
+        
+		&:nth-child(3) {
+			transform: rotateY(-90deg);
+        }
+        
+		&:nth-child(4) {
+			transform: rotateY(-135deg);
+        }
+        
+		&:nth-child(5) {
+			transform: rotateY(-180deg);
+        }
+        
+		&:nth-child(6) {
+			transform: rotateY(-225deg);
+        }
+        
+		&:nth-child(7) {
+			transform: rotateY(-270deg);
+        }
+        
+		&:nth-child(8) {
+			transform: rotateY(-315deg);
+		}
+	}
+}

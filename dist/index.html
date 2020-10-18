@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Squada+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Torch | Home</title>
+</head>
+<body>
+    
+    <!-- SHOWCASE -->
+    <section class="showcase">
+        <div class="dropdown">
+            <a onclick="myFunction()" class="dropbtn">menu</a>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="index.html">home</a>
+              <a href="#about">about us</a>
+              <a href="#music">music</a>
+              <a href="#gallery">gallery</a>
+              <a href="#gallery">contact</a>
+            </div>
+        </div>
+        <div class="flex">
+            <h1>torch</h1>
+            <a href="#readmore" class="btn">read more</a>
+        </div>
+    </section>
+
+    <!-- ABOUT US -->
+    <section class="about-us">
+        <div class="heading-box" id="readmore">
+            <h1 id="about">about us</h1>
+        </div>
+        <div class="about-us-box">
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur<br>
+                    adipiscing elit. Etiam aliquet vitae lacus<br> 
+                    viverra ultrices. Praesent a sodales augue,<br> 
+                    sit amet luctus nulla. Donec elementum,<br> 
+                    leo vel vestibulum bibendum, ligula mag<br>
+                    na convallis purus, et pretium lacus mass<br>
+                    a nec nisi. Pellentesque scelerisque ultric<br>
+                    es lorem, eget iaculis enim ullamcorper si<br>
+                    t amet. Nulla non euismod orci. Pellente<br>
+                    sque metus urna, finibus vitae bibendum<br>
+                    id, pretium nec lorem. Aliquam venenatis<br>
+                    purus</p>
+                <a href="#viewgallery" class="btn">gallery</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- MUSIC -->
+    <section class="music" id="music">
+        <div class="heading-box">
+            <h1>music</h1>
+        </div>
+        <div class="music-box">
+            <div class="album">
+                <a href="https://www.youtube.com/?hl=hr&gl=HR" target="_blank"><img src="img/album-one.jpg" alt="Album one"></a>
+                <p>album one</p>
+            </div>
+            <div class="album">
+                <a href="https://www.youtube.com/?hl=hr&gl=HR" target="_blank"><img src="img/album-two.jpg" alt="Album two"></a>
+                <p>album two</p>
+            </div>
+            <div class="album">
+                <a href="https://www.youtube.com/?hl=hr&gl=HR" target="_blank"><img src="img/album-three.jpg" alt="Album three"></a>
+                <p>album three</p>
+            </div>
+        </div>
+        <p class="check-out">check out our new song!</p>
+        <a href="https://www.youtube.com/?hl=hr&gl=HR" target="_blank"" class="btn listen">listen</a>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery" id="gallery">
+        <div class="desktop-gallery" id="viewgallery">
+            <div id="carousel">
+                <figure id="spinner">
+                    <img src="img/gallery1.jpg" alt="Rock band">
+                    <img src="img/gallery2.jpg" alt="Rock band">
+                    <img src="img/gallery3.jpg" alt="Rock band">
+                    <img src="img/gallery4.jpg" alt="Rock band">
+                    <img src="img/gallery5.jpg" alt="Rock band">
+                    <img src="img/gallery6.jpg" alt="Rock band">
+                    <img src="img/gallery7.jpg" alt="Rock band">
+                    <img src="img/gallery8.jpg" alt="Rock band">
+                </figure>
+            </div>
+            <span style="float:left" class="ss-icon" onclick="galleryspin('-')">&lt;</span>
+            <span style="float:right" class="ss-icon" onclick="galleryspin('')">&gt;</span>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        
+        <form action="">
+            <h1>contact</h1>
+            <input type="text" placeholder="full name"><br>
+            <input type="email" placeholder="email"><br>
+            <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea><br>
+            <a href="" class="btn">send</a>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <section class="footer">
+        <div class="icons">
+            <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" alt="Facebook icon"></a>
+            <a href="https://www.instagram.com/?hl=hr" target="_blank"><img src="img/instagram.png" alt="Instagram icon"></a>
+            <a href="https://twitter.com/?lang=hr" target="_blank"><img src="img/twitter.png" alt="Twitter icon"></a>
+        </div>
+        <div class="copyright">
+            <p>&copy; Viktorija Turjak</p>
+        </div>
+    </section>
+    
+
+    <!-- JAVASCRIPT --> 
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+    <script>
+        var angle = 0;
+        function galleryspin(sign) { 
+            spinner = document.querySelector("#spinner");
+            if (!sign) { angle = angle + 45; } else { angle = angle - 45; 
+        }
+        spinner.setAttribute("style","-webkit-transform: rotateY("+ angle +"deg); -moz-transform: rotateY("+ angle +"deg); transform: rotateY("+ angle +"deg);");
+        }
+</script>
+</body>
+</html>

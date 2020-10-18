@@ -1,0 +1,46 @@
+$background-color: #1C0000;
+$background-color-black: #030000;
+$text-color: #ffffff;
+$headings: 'Squada One', cursive;
+$text: 'Abel', sans-serif;
+$hover-color: #d1d1d1;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.btn {
+    background-color: transparent;
+    border: 1px solid $text-color;
+    padding: .2rem 1rem;
+    color: $text-color;
+    text-decoration: none;
+    font-family: $text;
+    font-size: 1.2rem;
+    transition: all .15s ease-in-out;
+
+    &:hover {
+        color: $background-color;
+        background-color: $text-color;
+        border: 1px solid $text-color;
+    }
+}
+
+.heading-box {
+    background-color: $background-color-black;
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+
+    h1 {
+        color: $text-color;
+        font-family: $headings;
+        font-size: 3rem;
+        text-transform: lowercase;
+    }
+}

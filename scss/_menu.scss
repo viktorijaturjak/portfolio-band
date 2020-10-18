@@ -1,0 +1,43 @@
+.dropbtn {
+    font-size: 2rem;
+    font-family: 'Squada One', cursive;
+    color: white;
+    cursor: pointer;
+    transition: all .15s ease-in-out;
+
+	&:hover {
+		color: $hover-color;
+	}
+}
+
+.dropdown {
+    float: right;
+    margin-right: 4rem;
+    margin-top: 1rem;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	min-width: 160px;
+    margin-top: .5rem;
+    z-index: 1;
+    
+	a {
+        color: $text-color;
+        font-size: 1.3rem;
+        font-family: 'Squada One', cursive;
+        text-decoration: none;
+        padding-bottom: .5rem;
+        display: block;
+        transition: all .15s ease-in-out;
+
+		&:hover {
+			color: $hover-color;
+		}
+	}
+}
+
+.show {
+	display: block;
+}

@@ -1,0 +1,435 @@
+@media screen and (min-width: 900px) and (max-width: 1440px) {
+
+    // SHOWCASE
+
+    .showcase {
+
+        .dropbtn {
+            font-size: 2.5rem !important;
+        }
+
+        .dropdown-content {
+
+            a {
+                font-size: 1.5rem;
+            }
+        }
+
+        .flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            height: 70vh;
+
+            h1 {
+                font-size: 15rem !important;
+                transform: rotate(-90deg);
+                margin-left: -10rem;
+            }
+
+            .btn {
+                margin-right: -4rem;
+                margin-bottom: -8rem;
+                font-size: 1.3rem !important;
+            }
+        }
+    }
+
+    // ABOUT US
+
+    .about-us {
+
+        .heading-box {
+
+            h1 {
+                font-size: 4rem !important;
+            }
+        }
+
+        .about-us-box {
+            background-image: url('..//img/music.jpg') !important;
+            background-size: cover;
+            background-position: right;
+            text-align: right !important;
+
+            .content {
+                // width: 50% !important;
+                padding: 4rem !important;
+                text-align: right !important;
+
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+    // MUSIC
+
+    .music {
+
+        .heading-box {
+
+            h1 {
+                font-size: 4rem !important;
+            }
+        }
+
+        .music-box {
+            width: 65%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .album {
+                
+                p {
+                    font-size: 1.5rem !important;
+                }
+            }
+        }
+
+        .check-out {
+            margin-top: 1rem;
+            font-size: 2rem !important;
+
+        }
+    }
+
+    // GALLERY
+
+    .gallery {
+        display: block !important;
+        width: 100%;
+    }
+
+    // CONTACT
+
+    .contact {
+        
+        form {
+
+            h1 {
+                font-size: 4rem !important;
+            }
+
+            input {
+                width: 20rem !important;
+                padding: 1rem 2.5rem !important;
+                font-size: 1.5rem !important;
+            }
+
+            textarea {
+                width: 20rem !important;
+                height: 10rem !important;
+                font-size: 1.5rem !important;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 2000px) {
+
+// HOMEPAGE
+
+    .showcase {
+
+        .dropbtn {
+            font-size: 3rem !important;
+        }
+
+        .dropdown-content {
+
+            a {
+                font-size: 2rem;
+            }
+        }
+
+        .flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            height: 70vh;
+
+            h1 {
+                font-size: 20rem !important;
+                transform: rotate(-90deg);
+                margin-left: -13rem;
+            }
+
+            .btn {
+                margin-right: -4rem;
+                margin-bottom: -10rem;
+                font-size: 2rem !important;
+            }
+        }
+    }
+
+    // ABOUT US
+
+    .about-us {
+
+        .heading-box {
+            padding: 2rem 0 !important;
+
+            h1 {
+                font-size: 4.5rem !important;
+            }
+        }
+
+        .about-us-box {
+            background-image: url('..//img/music.jpg') !important;
+            background-size: cover;
+            background-position: right;
+            text-align: right !important;
+
+            .content {
+                // width: 50% !important;
+                padding: 6rem !important;
+                text-align: right !important;
+
+                p {
+                    font-size: 1.5rem;
+                }
+
+                .btn {
+                    font-size: 1.5rem !important;
+                }
+            }
+        }
+    }
+
+    // MUSIC
+
+    .music {
+        padding-bottom: 4rem !important;
+
+        .heading-box {
+            padding: 2rem 0 !important;
+
+            h1 {
+                font-size: 4.5rem !important;
+            }
+        }
+
+        .music-box {
+            width: 65%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .album {
+
+                img {
+                    width: 15rem !important;
+                }
+                
+                p {
+                    font-size: 2rem !important;
+                }
+            }
+        }
+
+        .check-out {
+            margin-top: 1rem;
+            font-size: 2.5rem !important;
+        }
+
+        .listen {
+            font-size: 1.5rem !important;
+        }
+    }
+
+    // GALLERY
+
+    .gallery {
+        display: block !important;
+        width: 100%;
+    }
+
+    // CONTACT
+
+    .contact {
+        
+        form {
+            padding: 2rem 0 !important;
+
+            h1 {
+                font-size: 4.5rem !important;
+            }
+
+            input {
+                width: 20rem !important;
+                padding: 1rem 2.5rem !important;
+                font-size: 2rem !important;
+            }
+
+            textarea {
+                width: 20rem !important;
+                height: 10rem !important;
+                font-size: 2rem !important;
+            }
+
+            .btn {
+                font-size: 1.5rem !important;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 2001px) {
+
+    // HOMEPAGE
+
+    .showcase {
+
+        .dropbtn {
+            font-size: 4rem !important;
+        }
+
+        .dropdown-content {
+
+            a {
+                font-size: 2.5rem;
+            }
+        }
+
+        .flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            height: 70vh;
+
+            h1 {
+                font-size: 25rem !important;
+                transform: rotate(-90deg);
+                margin-left: -15rem;
+            }
+
+            .btn {
+                margin-right: -4rem;
+                margin-bottom: -15rem;
+                font-size: 3rem !important;
+            }
+        }
+    }
+
+    // ABOUT US
+
+    .about-us {
+
+        .heading-box {
+            padding: 4rem 0 !important;
+
+            h1 {
+                font-size: 5.5rem !important;
+            }
+        }
+
+        .about-us-box {
+            background-image: url('..//img/music.jpg') !important;
+            background-size: cover;
+            background-position: right;
+            text-align: right !important;
+
+            .content {
+                padding: 10rem !important;
+                text-align: right !important;
+
+                p {
+                    font-size: 2.3rem;
+                }
+
+                .btn {
+                    font-size: 2.5rem !important;
+                }
+            }
+        }
+    }
+
+    // MUSIC
+
+    .music {
+        padding-bottom: 4rem !important;
+
+        .heading-box {
+            padding: 4rem 0 !important;
+
+            h1 {
+                font-size: 5.5rem !important;
+            }
+        }
+
+        .music-box {
+            width: 55%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .album {
+
+                img {
+                    width: 20rem !important;
+                }
+                
+                p {
+                    font-size: 2.5rem !important;
+                }
+            }
+        }
+
+        .check-out {
+            margin-top: 1rem;
+            font-size: 3rem !important;
+        }
+
+        .listen {
+            font-size: 2.5rem !important;
+        }
+    }
+
+    // GALLERY
+
+    .gallery {
+        display: block !important;
+        width: 100%;
+
+        div#carousel {
+            padding-top: 6rem !important;
+        }
+    }
+
+    // CONTACT
+
+    .contact {
+        
+        form {
+            padding: 4rem 0 !important;
+
+            h1 {
+                font-size: 5.5rem !important;
+                padding-bottom: 4rem !important;
+            }
+
+            input {
+                width: 25rem !important;
+                padding: 1rem 2.5rem !important;
+                font-size: 2.5rem !important;
+            }
+
+            textarea {
+                width: 25rem !important;
+                height: 10rem !important;
+                font-size: 2.5rem !important;
+            }
+
+            .btn {
+                font-size: 2.5rem !important;
+            }
+        }
+    }
+
+}

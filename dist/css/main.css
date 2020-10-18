@@ -1,0 +1,658 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.btn {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  padding: .2rem 1rem;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Abel", sans-serif;
+  font-size: 1.2rem;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+}
+
+.btn:hover {
+  color: #1C0000;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.heading-box {
+  background-color: #030000;
+  text-align: center;
+  padding: 1rem 0 1rem 0;
+}
+
+.heading-box h1 {
+  color: #ffffff;
+  font-family: "Squada One", cursive;
+  font-size: 3rem;
+  text-transform: lowercase;
+}
+
+.dropbtn {
+  font-size: 2rem;
+  font-family: 'Squada One', cursive;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+}
+
+.dropbtn:hover {
+  color: #d1d1d1;
+}
+
+.dropdown {
+  float: right;
+  margin-right: 4rem;
+  margin-top: 1rem;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  margin-top: .5rem;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-family: 'Squada One', cursive;
+  text-decoration: none;
+  padding-bottom: .5rem;
+  display: block;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+}
+
+.dropdown-content a:hover {
+  color: #d1d1d1;
+}
+
+.show {
+  display: block;
+}
+
+@media screen and (min-width: 900px) and (max-width: 1440px) {
+  .showcase .dropbtn {
+    font-size: 2.5rem !important;
+  }
+  .showcase .dropdown-content a {
+    font-size: 1.5rem;
+  }
+  .showcase .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    height: 70vh;
+  }
+  .showcase .flex h1 {
+    font-size: 15rem !important;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    margin-left: -10rem;
+  }
+  .showcase .flex .btn {
+    margin-right: -4rem;
+    margin-bottom: -8rem;
+    font-size: 1.3rem !important;
+  }
+  .about-us .heading-box h1 {
+    font-size: 4rem !important;
+  }
+  .about-us .about-us-box {
+    background-image: url("..//img/music.jpg") !important;
+    background-size: cover;
+    background-position: right;
+    text-align: right !important;
+  }
+  .about-us .about-us-box .content {
+    padding: 4rem !important;
+    text-align: right !important;
+  }
+  .about-us .about-us-box .content p {
+    font-size: 1.2rem;
+  }
+  .music .heading-box h1 {
+    font-size: 4rem !important;
+  }
+  .music .music-box {
+    width: 65%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .music .music-box .album p {
+    font-size: 1.5rem !important;
+  }
+  .music .check-out {
+    margin-top: 1rem;
+    font-size: 2rem !important;
+  }
+  .gallery {
+    display: block !important;
+    width: 100%;
+  }
+  .contact form h1 {
+    font-size: 4rem !important;
+  }
+  .contact form input {
+    width: 20rem !important;
+    padding: 1rem 2.5rem !important;
+    font-size: 1.5rem !important;
+  }
+  .contact form textarea {
+    width: 20rem !important;
+    height: 10rem !important;
+    font-size: 1.5rem !important;
+  }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 2000px) {
+  .showcase .dropbtn {
+    font-size: 3rem !important;
+  }
+  .showcase .dropdown-content a {
+    font-size: 2rem;
+  }
+  .showcase .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    height: 70vh;
+  }
+  .showcase .flex h1 {
+    font-size: 20rem !important;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    margin-left: -13rem;
+  }
+  .showcase .flex .btn {
+    margin-right: -4rem;
+    margin-bottom: -10rem;
+    font-size: 2rem !important;
+  }
+  .about-us .heading-box {
+    padding: 2rem 0 !important;
+  }
+  .about-us .heading-box h1 {
+    font-size: 4.5rem !important;
+  }
+  .about-us .about-us-box {
+    background-image: url("..//img/music.jpg") !important;
+    background-size: cover;
+    background-position: right;
+    text-align: right !important;
+  }
+  .about-us .about-us-box .content {
+    padding: 6rem !important;
+    text-align: right !important;
+  }
+  .about-us .about-us-box .content p {
+    font-size: 1.5rem;
+  }
+  .about-us .about-us-box .content .btn {
+    font-size: 1.5rem !important;
+  }
+  .music {
+    padding-bottom: 4rem !important;
+  }
+  .music .heading-box {
+    padding: 2rem 0 !important;
+  }
+  .music .heading-box h1 {
+    font-size: 4.5rem !important;
+  }
+  .music .music-box {
+    width: 65%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .music .music-box .album img {
+    width: 15rem !important;
+  }
+  .music .music-box .album p {
+    font-size: 2rem !important;
+  }
+  .music .check-out {
+    margin-top: 1rem;
+    font-size: 2.5rem !important;
+  }
+  .music .listen {
+    font-size: 1.5rem !important;
+  }
+  .gallery {
+    display: block !important;
+    width: 100%;
+  }
+  .contact form {
+    padding: 2rem 0 !important;
+  }
+  .contact form h1 {
+    font-size: 4.5rem !important;
+  }
+  .contact form input {
+    width: 20rem !important;
+    padding: 1rem 2.5rem !important;
+    font-size: 2rem !important;
+  }
+  .contact form textarea {
+    width: 20rem !important;
+    height: 10rem !important;
+    font-size: 2rem !important;
+  }
+  .contact form .btn {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media screen and (min-width: 2001px) {
+  .showcase .dropbtn {
+    font-size: 4rem !important;
+  }
+  .showcase .dropdown-content a {
+    font-size: 2.5rem;
+  }
+  .showcase .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    height: 70vh;
+  }
+  .showcase .flex h1 {
+    font-size: 25rem !important;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    margin-left: -15rem;
+  }
+  .showcase .flex .btn {
+    margin-right: -4rem;
+    margin-bottom: -15rem;
+    font-size: 3rem !important;
+  }
+  .about-us .heading-box {
+    padding: 4rem 0 !important;
+  }
+  .about-us .heading-box h1 {
+    font-size: 5.5rem !important;
+  }
+  .about-us .about-us-box {
+    background-image: url("..//img/music.jpg") !important;
+    background-size: cover;
+    background-position: right;
+    text-align: right !important;
+  }
+  .about-us .about-us-box .content {
+    padding: 10rem !important;
+    text-align: right !important;
+  }
+  .about-us .about-us-box .content p {
+    font-size: 2.3rem;
+  }
+  .about-us .about-us-box .content .btn {
+    font-size: 2.5rem !important;
+  }
+  .music {
+    padding-bottom: 4rem !important;
+  }
+  .music .heading-box {
+    padding: 4rem 0 !important;
+  }
+  .music .heading-box h1 {
+    font-size: 5.5rem !important;
+  }
+  .music .music-box {
+    width: 55%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .music .music-box .album img {
+    width: 20rem !important;
+  }
+  .music .music-box .album p {
+    font-size: 2.5rem !important;
+  }
+  .music .check-out {
+    margin-top: 1rem;
+    font-size: 3rem !important;
+  }
+  .music .listen {
+    font-size: 2.5rem !important;
+  }
+  .gallery {
+    display: block !important;
+    width: 100%;
+  }
+  .gallery div#carousel {
+    padding-top: 6rem !important;
+  }
+  .contact form {
+    padding: 4rem 0 !important;
+  }
+  .contact form h1 {
+    font-size: 5.5rem !important;
+    padding-bottom: 4rem !important;
+  }
+  .contact form input {
+    width: 25rem !important;
+    padding: 1rem 2.5rem !important;
+    font-size: 2.5rem !important;
+  }
+  .contact form textarea {
+    width: 25rem !important;
+    height: 10rem !important;
+    font-size: 2.5rem !important;
+  }
+  .contact form .btn {
+    font-size: 2.5rem !important;
+  }
+}
+
+.desktop-gallery {
+  width: 100%;
+}
+
+div#carousel {
+  -webkit-perspective: 1200px;
+          perspective: 1200px;
+  background: #030000;
+  font-size: 0;
+  padding-top: 1rem;
+  overflow: hidden;
+  height: 60vh;
+}
+
+div#carousel ~ span {
+  color: #fff;
+  margin: 2rem;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  -webkit-transition: 0.6s color;
+  transition: 0.6s color;
+  position: relative;
+  margin-top: -10rem;
+  border-bottom: none;
+  line-height: 0;
+}
+
+div#carousel ~ span:hover {
+  color: #888;
+  cursor: pointer;
+}
+
+figure#spinner {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  height: 500px;
+  -webkit-transform-origin: 50% 50% -500px;
+          transform-origin: 50% 50% -500px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+figure#spinner img {
+  width: 40%;
+  max-width: 425px;
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  -webkit-transform-origin: 50% 50% -500px;
+          transform-origin: 50% 50% -500px;
+  outline: 1px solid transparent;
+}
+
+figure#spinner img:nth-child(1) {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+figure#spinner img:nth-child(2) {
+  -webkit-transform: rotateY(-45deg);
+          transform: rotateY(-45deg);
+}
+
+figure#spinner img:nth-child(3) {
+  -webkit-transform: rotateY(-90deg);
+          transform: rotateY(-90deg);
+}
+
+figure#spinner img:nth-child(4) {
+  -webkit-transform: rotateY(-135deg);
+          transform: rotateY(-135deg);
+}
+
+figure#spinner img:nth-child(5) {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+figure#spinner img:nth-child(6) {
+  -webkit-transform: rotateY(-225deg);
+          transform: rotateY(-225deg);
+}
+
+figure#spinner img:nth-child(7) {
+  -webkit-transform: rotateY(-270deg);
+          transform: rotateY(-270deg);
+}
+
+figure#spinner img:nth-child(8) {
+  -webkit-transform: rotateY(-315deg);
+          transform: rotateY(-315deg);
+}
+
+.showcase {
+  background: url("..//img/about-us.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.showcase .flex {
+  text-align: center;
+  padding-top: 40vh;
+}
+
+.showcase .flex h1 {
+  color: #ffffff;
+  font-family: "Squada One", cursive;
+  font-size: 8rem;
+  text-transform: uppercase;
+  -webkit-animation-name: color;
+          animation-name: color;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes color {
+  from {
+    color: #ffffff;
+  }
+  to {
+    color: darkred;
+  }
+}
+
+@keyframes color {
+  from {
+    color: #ffffff;
+  }
+  to {
+    color: darkred;
+  }
+}
+
+.about-us .about-us-box {
+  background-color: #1C0000;
+}
+
+.about-us .about-us-box .content {
+  color: #ffffff;
+  padding: 2rem;
+  text-align: center;
+}
+
+.about-us .about-us-box .content p {
+  font-family: "Abel", sans-serif;
+  margin-bottom: 2rem;
+}
+
+.music {
+  background-color: #030000;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.music .music-box {
+  background-color: #030000;
+}
+
+.music .music-box .album {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.music .music-box .album img {
+  width: 10rem;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+}
+
+.music .music-box .album img:hover {
+  -webkit-filter: drop-shadow(8px 8px 10px darkred);
+          filter: drop-shadow(8px 8px 10px darkred);
+}
+
+.music .music-box .album p {
+  color: #ffffff;
+  font-family: "Abel", sans-serif;
+  font-size: 1.2rem;
+}
+
+.music .check-out {
+  padding: 2rem;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Abel", sans-serif;
+}
+
+.gallery {
+  display: none;
+}
+
+.contact {
+  background: #1C0000;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.contact form h1 {
+  color: #ffffff;
+  font-family: "Squada One", cursive;
+  font-size: 3rem;
+  padding: 1rem 0;
+}
+
+.contact form input {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  width: 10rem;
+  padding: .5rem 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.contact form textarea {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  font-family: "Abel", sans-serif;
+  width: 10rem;
+  height: 5rem;
+  padding: .5rem 2rem;
+  margin-bottom: 2rem;
+  resize: none;
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.footer {
+  background-color: #030000;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.footer .icons {
+  margin-bottom: .5rem;
+}
+
+.footer .icons img {
+  width: 1.5rem;
+  margin-left: .5rem;
+  margin-right: .5rem;
+}
+
+.footer .copyright p {
+  color: #ffffff;
+  font-family: "Abel", sans-serif;
+  font-size: 1rem;
+}
+/*# sourceMappingURL=main.css.map */

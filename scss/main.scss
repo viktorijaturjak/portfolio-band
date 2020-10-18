@@ -1,0 +1,170 @@
+@import 'config';
+@import 'menu';
+@import 'responsive';
+@import 'gallery';
+
+// SHOWCASE
+
+.showcase {
+    background: url('..//img/about-us.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+    .flex {
+        text-align: center;
+        padding-top: 40vh;
+
+        h1 {
+            color: $text-color;
+            font-family: $headings;
+            font-size: 8rem;
+            text-transform: uppercase;
+            animation-name: color;
+            animation-duration: 5s;
+            animation-iteration-count:infinite;
+
+            @keyframes color {
+                from {color: $text-color;}
+                to {color: darkred;}
+            }
+        }
+    }
+}
+
+// ABOUT US
+
+.about-us {
+
+    .about-us-box {
+        background-color: $background-color;
+
+        .content {
+            color: $text-color;
+            padding: 2rem;
+            text-align: center;
+
+            p {
+                font-family: $text;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
+
+// MUSIC
+
+.music {
+    background-color: $background-color-black;
+    text-align: center;
+    padding-bottom: 2rem;
+
+    .music-box {
+        background-color: $background-color-black;
+
+        .album {
+            text-align: center;
+            padding-top: 1rem;
+
+            img {
+                width: 10rem;
+                transition: all .15s ease-in-out;
+
+                &:hover {
+                    filter: drop-shadow(8px 8px 10px darkred);
+                }
+            }
+
+            p {
+                color: $text-color;
+                font-family: $text;
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .check-out {
+        padding: 2rem;
+        color: $text-color;
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: $text;
+    }
+}
+
+// GALLERY 
+
+.gallery {
+    display: none;
+}
+
+// CONTACT
+
+.contact {
+    background: $background-color;
+    text-align: center;
+    padding-bottom: 2rem;
+
+    form {
+
+        h1 {
+            color: $text-color;
+            font-family: $headings;
+            font-size: 3rem;
+            padding: 1rem 0;
+        }
+
+        input {
+            background-color: transparent;
+            border: 1px solid $text-color;
+            width: 10rem;
+            padding: .5rem 2rem;
+            margin-bottom: 1rem;
+            text-align: center;
+            color: $text-color;
+            font-size: 1rem;
+        }
+
+        textarea {
+            background-color: transparent;
+            border: 1px solid $text-color;
+            font-family: $text;
+            width: 10rem;
+            height: 5rem;
+            padding: .5rem 2rem;
+            margin-bottom: 2rem;
+            resize: none;
+            text-align: center;
+            color: $text-color;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+// FOOTER 
+
+.footer {
+    background-color: $background-color-black;
+    text-align: center;
+    padding: 1rem 0;
+
+    .icons {
+        margin-bottom: .5rem;
+
+        img {
+            width: 1.5rem;
+            margin-left: .5rem;
+            margin-right: .5rem;
+        }
+    }
+
+    .copyright {
+
+        p {
+            color: $text-color;
+            font-family: $text;
+            font-size: 1rem;
+        }
+    }
+}
