@@ -42,12 +42,16 @@
 
         .content {
             color: $text-color;
-            padding: 2rem;
+            padding: 4rem 2rem 2rem 2rem;
             text-align: center;
 
             p {
                 font-family: $text;
                 margin-bottom: 2rem;
+            }
+
+            .btn {
+                display: none;
             }
         }
     }

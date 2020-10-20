@@ -132,6 +132,9 @@ html {
   .about-us .about-us-box .content p {
     font-size: 1.2rem;
   }
+  .about-us .about-us-box .content .btn {
+    display: inline !important;
+  }
   .music .heading-box h1 {
     font-size: 4rem !important;
   }
@@ -223,6 +226,7 @@ html {
     font-size: 1.5rem;
   }
   .about-us .about-us-box .content .btn {
+    display: inline !important;
     font-size: 1.5rem !important;
   }
   .music {
@@ -334,6 +338,7 @@ html {
     font-size: 2.3rem;
   }
   .about-us .about-us-box .content .btn {
+    display: inline !important;
     font-size: 2.5rem !important;
   }
   .music {
@@ -543,13 +548,17 @@ figure#spinner img:nth-child(8) {
 
 .about-us .about-us-box .content {
   color: #ffffff;
-  padding: 2rem;
+  padding: 4rem 2rem 2rem 2rem;
   text-align: center;
 }
 
 .about-us .about-us-box .content p {
   font-family: "Abel", sans-serif;
   margin-bottom: 2rem;
+}
+
+.about-us .about-us-box .content .btn {
+  display: none;
 }
 
 .music {
