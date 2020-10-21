@@ -97,12 +97,12 @@
     <!-- CONTACT -->
     <section class="contact" id="contact">
         
-        <form action="">
+        <form action="php/contactform.php" method="POST">
             <h1>contact</h1>
-            <input type="text" placeholder="full name"><br>
-            <input type="email" placeholder="email"><br>
-            <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea><br>
-            <a href="" class="btn">send</a>
+            <input type="text" placeholder="full name" name="name"><br>
+            <input type="email" placeholder="email" name="mail"><br>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="message"></textarea><br>
+            <button name="submit" type="submit">send</button>
         </form>
     </section>
 

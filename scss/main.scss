@@ -143,6 +143,24 @@
             color: $text-color;
             font-size: 1.2rem;
         }
+
+        button {
+            background-color: transparent;
+            border: 1px solid $text-color;
+            padding: .2rem 1rem;
+            color: $text-color;
+            text-decoration: none;
+            font-family: $text;
+            font-size: 1.2rem;
+            transition: all .15s ease-in-out;
+            cursor: pointer;
+
+            &:hover {
+                color: $background-color;
+                background-color: $text-color;
+                border: 1px solid $text-color;
+            }
+        }
     }
 }
 

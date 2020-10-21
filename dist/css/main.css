@@ -643,6 +643,25 @@ figure#spinner img:nth-child(8) {
   font-size: 1.2rem;
 }
 
+.contact form button {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  padding: .2rem 1rem;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Abel", sans-serif;
+  font-size: 1.2rem;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  cursor: pointer;
+}
+
+.contact form button:hover {
+  color: #1C0000;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
 .footer {
   background-color: #030000;
   text-align: center;
